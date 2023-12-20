@@ -1,18 +1,42 @@
-## Getting Started
+N-ое треугольное число
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Вычислить n-ое треугольного число(сумма чисел от 1 до n).
 
-## Folder Structure
+Внутри класса Answer напишите метод countNTriangle, который принимает число n и возвращает его n-ое треугольное число.
+Если число n < 1 (ненатуральное) метод должен вернуть -1.
 
-The workspace contains two folders by default, where:
+Пример
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+n = 4 -> 10
+n = 5 -> 15
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Условие
+```sh
+class Answer {
+    public int countNTriangle(int n){
+      // Введите свое решение ниже
 
-## Dependency Management
+    }
+}
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+// Не удаляйте этот класс - он нужен для вывода результатов на экран и проверки
+public class Printer{ 
+    public static void main(String[] args) { 
+      int n = 0;
+      
+      if (args.length == 0) {
+        // При отправке кода на Выполнение, вы можете варьировать эти параметры
+        n = 4;
+      }
+      else{
+        n = Integer.parseInt(args[0]);
+      }     
+      
+        // Вывод результата на экран
+      Answer ans = new Answer(); 
+      int itresume_res = ans.countNTriangle(n);     
+      System.out.println(itresume_res);
+    }
+}
+```
