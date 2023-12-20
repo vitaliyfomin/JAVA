@@ -40,3 +40,5 @@ public class Printer{
     }
 }
 ```
+Выравнивание кода:
+Shift + Alt +F
