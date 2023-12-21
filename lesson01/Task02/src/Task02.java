@@ -21,7 +21,7 @@ class Answer {
 }
 
 // Не удаляйте этот класс - он нужен для вывода результатов на экран и проверки
-public class Task0202 {
+public class Task02 {
     public static void main(String[] args) {
         Answer ans = new Answer();
         ans.printPrimeNums();
