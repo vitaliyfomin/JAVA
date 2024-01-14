@@ -1,18 +1,22 @@
-## Getting Started
+## Калькулятор с отменой последней операции
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+В обычный калькулятор без логирования добавьте возможность отменить последнюю операцию.
 
-## Folder Structure
+Отмена последней операции должна быть реализована следующим образом: если передан оператор '<' калькулятор должен вывести результат предпоследней операции.
+```
+calculate('+', 3, 7)
+calculate('+', 4, 7)
+calculate('<', 0, 0)
 
-The workspace contains two folders by default, where:
+// 10.0
+// 11.0
+// 10.0
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+calculate('*', 3, 2)
+calculate('-', 7, 4)
+calculate('<', 0, 0)
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
-
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
-
-## Dependency Management
-
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+// 6.0
+// 3.0
+// 6.0
+```
