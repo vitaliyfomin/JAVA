@@ -1,18 +1,27 @@
-## Getting Started
+## Сортировка массива с использованием кучи
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Необходимо разработать программу для сортировки массива целых чисел с использованием сортировки кучей **(Heap Sort).** Программа должна работать следующим образом:
 
-## Folder Structure
+Принимать на вход массив целых чисел для сортировки. Если массив не предоставлен, программа использует массив по умолчанию.
 
-The workspace contains two folders by default, where:
+Сначала выводить исходный массив на экран.
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Затем применять сортировку кучей **(Heap Sort)** для сортировки элементов массива в порядке возрастания.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+Выводить отсортированный массив на экран.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Ваше решение должно содержать два основных метода: **buildTree**, который строит сортирующее дерево на основе массива, и **heapSort**, который выполняет собственно сортировку кучей.
 
-## Dependency Management
+Программа должна быть способной сортировать массив, даже если он состоит из отрицательных чисел и имеет дубликаты.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+На входе:
+```
+'5 8 12 3 6 9'
+```
+На выходе:
+```
+Initial array:
+[5, 8, 12, 3, 6, 9]
+Sorted array:
+[3, 5, 6, 8, 9, 12]
+```
